@@ -72,16 +72,16 @@ export function Home(){
           <SkillCard skill={'No skills'} />
         :
           <FlatList
-          showsVerticalScrollIndicator={false}
-          data={mySkills}
-          keyExtractor={item => item.id}
-          renderItem={({ item }) => (
-            <SkillCard
-              skill={item.name}
-              onPress={() => handleRemoveSkill(item.id)}
-            />
-          )}
-        />
+            showsVerticalScrollIndicator={false}
+            data={mySkills}
+            keyExtractor={item => item.id}
+            renderItem={({ item }) => (
+              <SkillCard
+                skill={item.name}
+                onPress={() => handleRemoveSkill(item.id)}
+              />
+            )}
+          />
       }
 
     </SafeAreaView>
